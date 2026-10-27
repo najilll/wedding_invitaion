@@ -252,10 +252,10 @@ function Venue(){
   return h('section',{className:'venue',id:'venue'},
     h('div',{className:'container text-center'},
       h(Reveal,null,h('p',{className:'label fd'},'WHERE'),h('h2',{className:'title',style:{marginTop:8}},h(Ln,null,'Join us in Kerala'))),
-      h(Reveal,{className:'card wipe',t:.2},h('div',{className:'sf b'}),
+      h(Reveal,{className:'cardw',t:.15},h('div',{className:'card wipe'},h('div',{className:'sf b'}),
         h('h3',null,C.venue),h('p',{style:{marginTop:6}},C.addr),h('p',null,'Marriage between 11:15 and 11:50 am'),h('p',{style:{marginTop:14}},'Reception on Monday, 21 December, from 5:00 PM at Gago Convention Center, Kadakkal, Kerala - 691536'),
         h('a',{className:'btn fill-btn',href:C.map,target:'_blank',rel:'noopener'},'Open in Maps'),
-        h('a',{className:'btn',href:C.map2,target:'_blank',rel:'noopener'},'Reception location'))));
+        h('a',{className:'btn',href:C.map2,target:'_blank',rel:'noopener'},'Reception location')))));
 }
 
 function App(){
